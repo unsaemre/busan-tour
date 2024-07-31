@@ -2,4 +2,4 @@
 
 # 06-17 busan end
 
-# 07-16 main-slide edit, moblie start
+# 07-16 main-slide edit
