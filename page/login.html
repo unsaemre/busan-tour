@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header></header>
+
+    <main class="container">
+      <nav class="nav_wrap">
+        <div class="nav_box">
+          <ul class="nav">
+            <li>
+              <a href="../page/main.html"><i class="xi-home-o"></i></a>
+            </li>
+            <li>나의 여행</li>
+            <li><i class="xi-angle-right-min"></i></li>
+            <li>설정</li>
+          </ul>
+
+          <ul class="side_nav">
+            <li>가</li>
+            <li><i class="xi-link"></i></li>
+            <li><i class="xi-external-link"></i></li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="hero_wrap">
+        <div class="hero">
+          <div class="photo swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../images/login/login-bg-1.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../images/login/login-bg-2.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../images/login/login-bg-3.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../images/login/login-bg-4.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../images/login/login-bg-5.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <nav class="login_wrap">
+            <h1 class="fwb fsz34">Sign in</h1>
+            <ul class="login">
+              <li>
+                <a href="#"><img src="../images/login/sns-1.png" alt="" /></a>
+                <p>KaKao 로그인</p>
+              </li>
+              <li>
+                <a href="#"><img src="../images/login/sns-2.png" alt="" /></a>
+                <p>Google 로그인</p>
+              </li>
+              <li>
+                <a href="#"><img src="../images/login/sns-3.png" alt="" /></a>
+                <p>Facebook 로그인</p>
+              </li>
+              <li>
+                <a href="#"><img src="../images/login/sns-4.png" alt="" /></a>
+                <p>Line 로그인</p>
+              </li>
+              <li>
+                <a href="#"><img src="../images/login/sns-5.png" alt="" /></a>
+                <p>NAVER 로그인</p>
+              </li>
+              <li>
+                <a href="#"><img src="../images/login/sns-6.png" alt="" /></a>
+                <p>Sign in with Apple</p>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <script>
+      $("header").load("../inc/header.html");
+      $("footer").load("../inc/footer.html");
+    </script>
+
+    <script>
+      var main = new Swiper(".photo", {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+  </body>
+</html>
