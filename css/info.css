@@ -116,11 +116,10 @@
   margin-bottom: 20px;
 }
 .course p {
-  overflow: hidden;
-  text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
   line-height: 1.4;
   width: 1130px;
   margin: 12px 0 59px;
@@ -236,9 +235,9 @@
 .travel li {
   text-align: center;
 }
-.travel p {
+.travel figcaption {
   padding: 10px 0 16px;
 }
-.travel li:hover p {
+.travel figure figcaption:hover {
   text-decoration: underline;
 }

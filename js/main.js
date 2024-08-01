@@ -39,26 +39,6 @@ $("#play01").on("click", function () {
 main.controller.control = text;
 text.controller.control = main;
 
-//
-
-// $(function () {
-//   var ticker = function () {
-//     setTimeout(function () {
-//       $("#ticker li:first").animate({ marginTop: "-20px" }, 500, function () {
-//         $(this).detach().appendTo("ul#ticker").removeAttr("style");
-//       });
-//       ticker();
-//     }, 3100);
-//   };
-//   ticker();
-// });
-
-// $("#play01").on("click", function () {
-//   $(this).hide();
-//   $("#pause01").show();
-//   main.autoplay.start();
-// });
-
 // section 1
 var section1 = new Swiper(".first", {
   autoplay: {

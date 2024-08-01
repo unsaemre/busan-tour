@@ -42,7 +42,7 @@
       </nav>
     </div>
     <main class="hero_wrap">
-      <div class="title">
+      <article class="title">
         <h1 class="fwb fsz34">부산은 바다지, 부산바다 당일치기</h1>
         <div class="photo"><img src="../images/info/main_01.png" alt="" /></div>
         <div class="info">
@@ -66,7 +66,7 @@
             >
           </div>
         </div>
-      </div>
+      </article>
 
       <ul class="menu">
         <li>상세정보</li>
@@ -349,36 +349,78 @@
         <h1 class="fwb fsz34">추천여행지</h1>
         <ul>
           <li>
-            <img src="../images/info/travel_01.png" alt="" />
-            <p>2박 3일에 완성하는 부산 완전정복</p>
+            <figure>
+              <img
+                src="../images/info/travel_01.png"
+                alt="2박 3일에 완성하는 부산 완전정복"
+              />
+              <figcaption>2박 3일에 완성하는 부산 완전정복</figcaption>
+            </figure>
           </li>
           <li>
-            <img src="../images/info/travel_02.png" alt="" />
-            <p>친구들과 함께하는 2박 3일 부산 뚜벅이 여행</p>
+            <figure>
+              <img
+                src="../images/info/travel_02.png"
+                alt="친구들과 함께하는 2박 3일 부산 뚜벅이 여행"
+              />
+              <figcaption>
+                친구들과 함께하는 2박 3일 부산 뚜벅이 여행
+              </figcaption>
+            </figure>
           </li>
           <li>
-            <img src="../images/info/travel_03.png" alt="" />
-            <p>1박 2일에 완성하는 부산 해안선 완전 정복!</p>
+            <figure>
+              <img
+                src="../images/info/travel_03.png"
+                alt="1박 2일에 완성하는 부산 해안선 완전 정복!"
+              />
+              <figcaption>1박 2일에 완성하는 부산 해안선 완전 정복!</figcaption>
+            </figure>
           </li>
           <li>
-            <img src="../images/info/travel_04.png" alt="" />
-            <p>지하철 타고 부산 투어 2박 3일</p>
+            <figure>
+              <img
+                src="../images/info/travel_04.png"
+                alt="지하철 타고 부산 투어 2박 3일"
+              />
+              <figcaption>지하철 타고 부산 투어 2박 3일</figcaption>
+            </figure>
           </li>
           <li>
-            <img src="../images/info/travel_05.png" alt="" />
-            <p>뉴진스 코스 따라 1박 2일 부산여행 Part 2.</p>
+            <figure>
+              <img
+                src="../images/info/travel_05.png"
+                alt="뉴진스 코스 따라 1박 2일 부산여행 Part 2."
+              />
+              <figcaption>뉴진스 코스 따라 1박 2일 부산여행 Part 2.</figcaption>
+            </figure>
           </li>
           <li>
-            <img src="../images/info/travel_06.png" alt="" />
-            <p>부산 당일여행의 정석, 동서로 가로지르기</p>
+            <figure>
+              <img
+                src="../images/info/travel_06.png"
+                alt="부산 당일여행의 정석, 동서로 가로지르기"
+              />
+              <figcaption>부산 당일여행의 정석, 동서로 가로지르기</figcaption>
+            </figure>
           </li>
           <li>
-            <img src="../images/info/travel_07.png" alt="" />
-            <p>Z세대 원픽! K컬처 체험 2박3일 코스</p>
+            <figure>
+              <img
+                src="../images/info/travel_07.png"
+                alt="Z세대 원픽! K컬처 체험 2박3일 코스"
+              />
+              <figcaption>Z세대 원픽! K컬처 체험 2박3일 코스</figcaption>
+            </figure>
           </li>
           <li>
-            <img src="../images/info/travel_08.png" alt="" />
-            <p>두 배로 즐거운 2박 3일 온 가족 부산여행</p>
+            <figure>
+              <img
+                src="../images/info/travel_08.png"
+                alt="두 배로 즐거운 2박 3일 온 가족 부산여행"
+              />
+              <figcaption>두 배로 즐거운 2박 3일 온 가족 부산여행</figcaption>
+            </figure>
           </li>
         </ul>
       </section>
@@ -403,6 +445,11 @@
       //     $(this).addClass("active");
       //   }
       // });
+
+      $(".menu li").click(function () {
+        $(".menu li").removeClass("active");
+        $(this).addClass("active");
+      });
     </script>
   </body>
 </html>
