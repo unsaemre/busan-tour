@@ -151,3 +151,14 @@ $("#play04").on("click", function () {
   $("#pause04").show();
   popup.autoplay.start();
 });
+
+// next page
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll("a:not(.exclude)");
+  links.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "../page/detail.html";
+    });
+  });
+});

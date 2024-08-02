@@ -62,7 +62,7 @@
   flex-direction: column;
   gap: 12px;
 }
-.login_wrap li {
+.login_wrap li a {
   display: flex;
   gap: 20px;
   padding: 0 20px;
@@ -114,5 +114,5 @@
   width: 30px;
   height: 30px;
   margin-left: 14px;
-  margin-top: 0;
+  margin-top: 6%;
 }

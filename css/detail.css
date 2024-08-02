@@ -139,6 +139,7 @@
   justify-content: center;
   gap: 4px;
   margin-bottom: 113px;
+  cursor: pointer;
 }
 .hero .page p {
   background-color: #fff;

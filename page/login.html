@@ -66,28 +66,40 @@
             <h1 class="fwb fsz34">Sign in</h1>
             <ul class="login">
               <li>
-                <a href="#"><img src="../images/login/sns-1.png" alt="" /></a>
-                <p>KaKao 로그인</p>
+                <a href="#"
+                  ><img src="../images/login/sns-1.png" alt="" />
+                  <p>KaKao 로그인</p>
+                </a>
               </li>
               <li>
-                <a href="#"><img src="../images/login/sns-2.png" alt="" /></a>
-                <p>Google 로그인</p>
+                <a href="#"
+                  ><img src="../images/login/sns-2.png" alt="" />
+                  <p>Google 로그인</p>
+                </a>
               </li>
               <li>
-                <a href="#"><img src="../images/login/sns-3.png" alt="" /></a>
-                <p>Facebook 로그인</p>
+                <a href="#"
+                  ><img src="../images/login/sns-3.png" alt="" />
+                  <p>Facebook 로그인</p>
+                </a>
               </li>
               <li>
-                <a href="#"><img src="../images/login/sns-4.png" alt="" /></a>
-                <p>Line 로그인</p>
+                <a href="#"
+                  ><img src="../images/login/sns-4.png" alt="" />
+                  <p>Line 로그인</p>
+                </a>
               </li>
               <li>
-                <a href="#"><img src="../images/login/sns-5.png" alt="" /></a>
-                <p>NAVER 로그인</p>
+                <a href="#"
+                  ><img src="../images/login/sns-5.png" alt="" />
+                  <p>NAVER 로그인</p>
+                </a>
               </li>
               <li>
-                <a href="#"><img src="../images/login/sns-6.png" alt="" /></a>
-                <p>Sign in with Apple</p>
+                <a href="#"
+                  ><img src="../images/login/sns-6.png" alt="" />
+                  <p>Sign in with Apple</p>
+                </a>
               </li>
             </ul>
           </nav>
@@ -110,6 +122,16 @@
           delay: 3500,
           disableOnInteraction: false,
         },
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll("a:not(.exclude)");
+        links.forEach((link) => {
+          link.addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = "../page/main.html";
+          });
+        });
       });
     </script>
   </body>
